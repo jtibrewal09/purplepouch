@@ -1,0 +1,17 @@
+**/.DS_Store
+node_modules/
+npm-debug.log
+package-lock.json
+node-copy
+*.bundle.js
+.eslintcache
+.eslintrc.js
+.stylelintrc.json
+.prettierrc
+config.js
+**/.expo/
+.vscode/
+packager-info.json
+./expo/*
+settings.json
+build/**
