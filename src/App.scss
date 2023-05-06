@@ -1,7 +1,55 @@
+@import './@assets/colors.scss';
+
 .App {
-  display: grid;
-  place-items: center;
-  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  background-color: $background;
   height: 100vh;
-  color: white;
+  color: $text;
+
+  .header {
+    width: 100%;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .init-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.profile-container {
+  // position: absolute;
+  right: 20px;
+  top: 20px;
+  .profile-wrapper {
+    position: relative;
+  }
+  .avatar {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: $text;
+    display: grid;
+    place-content: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-image: linear-gradient(to bottom, $primary, #5c4dd0);
+  }
+  .items-container {
+    position: absolute;
+    right: 0px;
+    // display: grid;
+    // grid-template-rows: repeat(2, 1fr);
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    color: $background;
+  }
 }
